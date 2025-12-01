@@ -45,7 +45,7 @@ function Page4() {
       </div>
 
       {/* Button */}
-      <button className="mt-10 bg-white shadow-md rounded-xl 
+      <button className="mt-10 bg-white shadow-md rounded-xl hover:bg-green-800
                          w-48 h-14 flex justify-center items-center
                          font-semibold text-black transition-transform duration-300 hover:scale-110">
         Explore Curriculum

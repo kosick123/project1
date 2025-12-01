@@ -26,7 +26,7 @@ function Navbar() {
 
           <img src={logo2} alt="logo2" className="w-8 h-8 transition-transform duration-300 hover:scale-110 cursor-pointer" />
 
-  < button className="bg-green-800 text-white rounded-md h-10 w-28 transition-transform duration-300 hover:scale-110">
+  < button className="bg-green-800 hover:bg-gray-800 text-white rounded-md h-10 w-28 transition-transform duration-300 hover:scale-110">
             Get Started
           </button>
         </ul>
@@ -46,7 +46,7 @@ function Navbar() {
           <li><Link to="/supportus" onClick={() => setOpen(false)}>Support Us</Link></li>
           <li><Link to="/signin" onClick={() => setOpen(false)}>Sign In</Link></li>
 
-          <button className="bg-green-800 text-white rounded-md h-10 w-full">
+          <button className="bg-green-800 text-white rounded-md h-10 w-full ">
             Get Started
           </button>
         </ul>
