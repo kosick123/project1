@@ -1,57 +1,85 @@
-import React, { useState } from "react";
-import logo from "../assets/logo.png";
-import logo2 from "../assets/logo2.png";
-import { Link } from "react-router-dom";
+import React from "react";
+import logo from "../assets/logo.svg";
+import watch from "../assets/icons8-heart-48.png";
+import basket from "../assets/icons8-wicker-basket-24.png";
+import dots from "../assets/icons8-three-dots-32.png";
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <nav className="sticky top-0 z-50 bg-white ">
-      <div className="flex justify-between items-center p-4">
+    <div className="flex flex-row justify-between items-center bg-gray-100 flex-wrap font-semibold p-2">
+      
+      {/* LEFT SIDE LOGO + SEARCH */}
+      <div className="flex flex-row gap-5">
+        <img src={logo} alt="logo" />
 
-        {/* Left Logo */}
-        <div className="flex items-center gap-3">
-          <img src={logo} alt="logo" className="w-10 h-10" />
-          <h2 className="text-black font-semibold">THE ODIN PROJECT</h2>
-        </div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 items-center text-green-600">
-          <li><Link to="/" className="hover:text-black ">All Paths</Link></li>
-          <li><Link to="/about" className="hover:text-black">About</Link></li>
-          <li><Link to="/community" className="hover:text-black">Community</Link></li>
-          <li><Link to="/supportus" className="hover:text-black">Support Us</Link></li>
-          <li><Link to="/signin" className="hover:text-black">Sign In</Link></li>
-
-          <img src={logo2} alt="logo2" className="w-8 h-8 transition-transform duration-300 hover:scale-110 cursor-pointer" />
-
-  < button className="bg-green-800 hover:bg-gray-800 text-white rounded-md h-10 w-28 transition-transform duration-300 hover:scale-110">
-            Get Started
-          </button>
-        </ul>
-
-        {/* Mobile Menu Button */}
-        <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>
-          ☰
-        </button>
+        <input
+          type="text"
+          placeholder="What Are You Looking For?"
+          className="w-96 h-12 bg-gray-200 shadow-sm text-gray-700 border rounded-sm p-2"
+        />
       </div>
 
-      {/* Mobile Dropdown */}
-      {open && (
-        <ul className="md:hidden flex flex-col gap-4 p-4 bg-green-100">
-          <li><Link to="/" onClick={() => setOpen(false)}>All Paths</Link></li>
-          <li><Link to="/about" onClick={() => setOpen(false)}>About</Link></li>
-          <li><Link to="/community" onClick={() => setOpen(false)}>Community</Link></li>
-          <li><Link to="/supportus" onClick={() => setOpen(false)}>Support Us</Link></li>
-          <li><Link to="/signin" onClick={() => setOpen(false)}>Sign In</Link></li>
+      {/* RIGHT SIDE ICONS */}
+      <div className="flex flex-row gap-7 items-center hover:cursor-pointer">
 
-          <button className="bg-green-800 text-white rounded-md h-10 w-full ">
-            Get Started
+        {/* SIGN IN DROPDOWN */}
+        <div className="relative group">
+          <button className="bg-purple-800 text-white w-40 h-12 rounded-sm hover:bg-gray-800">
+            SIGN UP / SIGN IN
           </button>
-        </ul>
-      )}
-    </nav>
+
+          <div className="absolute hidden group-hover:block top-14 right-0 bg-white shadow-lg rounded-md p-4 w-64 transition-all duration-200 z-50">
+            <h3 className="text-lg font-semibold mb-2">Sign In</h3>
+
+            <input type="text" placeholder="Email" className="w-full border p-2 rounded mb-2" />
+            <input type="password" placeholder="Password" className="w-full border p-2 rounded mb-3" />
+
+            <button className="w-full bg-purple-700 text-white p-2 rounded hover:bg-purple-900">
+              Login
+            </button>
+
+            <p className="text-sm mt-2 text-gray-600">
+              New user? <span className="text-purple-700 cursor-pointer">Create account</span>
+            </p>
+          </div>
+        </div>
+
+        {/* HEART ICON WITH BLUE UNDERLINE */}
+        <div className="flex flex-col items-center text-center group">
+          <img src={watch} alt="watch" className="w-5 h-5" />
+          <p className="text-sm">Favourites</p>
+
+          {/* Underline on hover */}
+          <div className="h-1 w-6 bg-blue-500 mt-1 rounded hidden group-hover:block"></div>
+        </div>
+
+        {/* BASKET ICON WITH BLUE UNDERLINE */}
+        <div className="flex flex-col items-center text-center group">
+          <img src={basket} alt="basket" className="w-5 h-5" />
+          <p className="text-sm">Cart</p>
+
+          <div className="h-1 w-6 bg-blue-500 mt-1 rounded hidden group-hover:block"></div>
+        </div>
+
+        {/* 3 DOTS MORE MENU */}
+        <div className="flex flex-col items-center text-center relative group">
+          <img src={dots} alt="dots" className="w-5 h-5" />
+          <p className="text-sm">More</p>
+
+          {/* DROPDOWN WHITE BOX */}
+          <div className="absolute hidden group-hover:block top-12 right-0 bg-white shadow-lg p-4 rounded-md w-48 z-50">
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">Online Gift</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">Offline Gift</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">Blog</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">Store Locator</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">Furniture Exchange</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">LandMark SBI Credit Card</p>
+            <p className="p-1 hover:bg-gray-200 cursor-pointer">E-List</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   );
 }
 

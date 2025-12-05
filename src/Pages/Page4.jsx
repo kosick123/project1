@@ -1,58 +1,139 @@
 import React from "react";
-import reactImg from "../assets/reactjs.svg";
-import dataImg from "../assets/database.svg";
+import big1 from "../assets/images-page-4/page4 big1.jpg";
+import big2 from "../assets/images-page-4/page4 big2.jpg";
+import big3 from "../assets/images-page-4/page4 big3.jpg";
+import imagespart5 from "../imagespart5";
 
-function Page4() {
-  const cards = [
-    { image: reactImg, title: "Intermediate" },
-    { image: dataImg, title: "Database" },
-    { image: reactImg, title: "Frontend" },
-    { image: dataImg, title: "Backend" },
-    { image: reactImg, title: "React" },
-    { image: dataImg, title: "SQL" },
-    { image: reactImg, title: "JavaScript" },
-    { image: dataImg, title: "MongoDB" },
-    { image: reactImg, title: "APIs" },
-  ];
+function Page4(){
+    return(
+        <div>
 
-  return (
-    <div className="p-10 bg-gray-100 flex flex-col justify-center items-center ">
+            {/*page4 div1 */}
+            <div className="flex flex-col md:flex-col flex-wrap gap-7 p-7 ">
+                <h1 className="text-5xl  text-black font-sans">Organised Living</h1>
+                <p className="text-black">Inspired choices for all your Organisers needs. For any occasion, for every occasion</p>
+                <img 
+                src={big1}
+                alt="big1"
+                />
+            </div>
 
-      {/* Heading */}
-      <h1 className="text-3xl font-semibold text-black text-center mb-10 p-10">
-        Learn everything you need to know
-      </h1>
+            <div className="flex justify-center items-center text-center ">
+                <p className="text-2xl text-black font-bold font-sans">Shop By Categories</p>
+            </div>
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+            {/*page4 div2/ */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-5 p-5">
+                {imagespart5.slice(0,5).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="neha"
+                    className="transition-transform duration-300 hover:scale-90"
+                    />
+                ))}
+            </div>
 
-        {cards.map((card, index) => (
-          <div 
-            key={index}
-            className="bg-white shadow-md rounded-xl p-6 flex flex-col 
-                       justify-center items-center text-center 
-                       w-60 h-60 transition-transform duration-300 hover:scale-110"
-          >
-            <img
-              src={card.image}
-              alt={card.title}
-              className="w-20 h-20 mb-4"
-            />
-            <h2 className="text-lg font-semibold">{card.title}</h2>
-          </div>
-        ))}
+            {/*page4 div3 */}
+            <div className="flex flex-wrap p-5 gap-5">
+                <img
+                src={big2}
+                alt="big2"
+                />
+            </div>
 
-      </div>
+            {/* pag4 div4 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 p-5 gap-5">
+                {imagespart5.slice(5,9).map((item4 => (
+                    <img 
+                    key={item4.id}
+                    src={item4.url}
+                    alt="nissi"
+                    />
+                )))}
+            </div>
 
-      {/* Button */}
-      <button className="mt-10 bg-white shadow-md rounded-xl hover:bg-green-800
-                         w-48 h-14 flex justify-center items-center
-                         font-semibold text-black transition-transform duration-300 hover:scale-110">
-        Explore Curriculum
-      </button>
+            <div className="flex flex-wrap justify-center items-center text-center">
+                <p className="text-2xl text-black font-bold">Home Essentials</p>
+            </div>
 
-    </div>
-  );
+
+            {/* page4 div5 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
+                {imagespart5.slice(9,12).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="nehaa"
+                    />
+                ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center text-center p-5">
+                <p className="text-2xl text-black font-bold">Living Room Organisers</p>
+            </div>
+
+
+            {/* page4 div6 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart5.slice(12,16).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="jsc"
+                    />
+                ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center text-center p-5 ">
+                <p className="text-black font-bold text-2xl">Bathroom Organisers</p>
+            </div>
+
+
+            <div className="flex flex-wrap gap-5 p-5">
+                <img
+                src={big3}
+                alt="tqy"
+                />
+            </div>
+
+
+            {/*page4 div7 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
+                {imagespart5.slice(16,19).map((item4) => (
+                        <img 
+                        key={item4.id}
+                        src={item4.url}
+                        alt="imgwe"
+                        />
+                       
+                ))}
+            </div>
+
+
+            <div className="flex flex-wrap justify-center items-center text-center gap-5 p-5">
+                <p className="text-black text-2xl font-bold">Bedroom Organisers</p>
+            </div>
+
+                 {/*page4 div8 */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart5.slice(19,23).map((item4) => (
+                        <img 
+                        key={item4.id}
+                        src={item4.url}
+                        alt="imgwe"
+                        />
+                       
+                ))}
+            </div>
+
+        
+          <div className="p-10">
+        <hr className="w-full mx-auto  rounded-full " />
+       </div>
+
+
+        </div>
+    )
 }
-
-export default Page4;
+export default Page4

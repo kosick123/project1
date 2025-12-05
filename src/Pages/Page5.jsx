@@ -1,94 +1,202 @@
-import React from 'react';
-import man1 from '../assets/man1.jpg';
-import man2 from '../assets/man2.jpg';
-import man3 from '../assets/man3.jpg';
-import man4 from '../assets/man4.jpg';
+import React from "react";
+import big1 from "../assets/images-page-5/page5 big1.jpg";
+import big2 from "../assets/images-page-5/page5 big2.jpg";
+import big3 from "../assets/images-page-5/page5 big3.jpg";
+import big4 from "../assets/images-page-5/page5 big4.jpg";
+import big5 from "../assets/images-page-5/page5 big5.jpg";
+import big6 from "../assets/images-page-5/page5 big6.jpg";
+import imagespart6 from "../imagespart6";
 
-function Page5() {
-  return (
-    <div className='flex flex-col justify-center items-center text-center p-10 bg-gray-200'>
+function Page5(){
+    return(
+        <div>
 
-      {/* Heading at the top */}
-      <h1 className='text-3xl md:text-4xl text-black font-semibold mb-10 p-10'>
-        Success Stories
-      </h1>
-
-      {/* Cards Container */}
-      <div className='flex flex-col md:flex-row gap-10'>
-
-        {/* Left Column */}
-        <div className='flex flex-col gap-8'>
-          
-          <div className='flex flex-row gap-5'>
-            <img src={man1} className='w-20 h-20 rounded-lg' alt='man1' />
-            <div className='flex flex-col text-left'>
-              <p className='font-semibold'>Rob Pando</p>
-              <p className='text-sm'>
-                TOP was a perfect match for my learning style. Not walking me
-                through an entire project but actually forcing me to figure it out…
-              </p>
+              {/*page4 div1 */}
+            <div className="flex flex-col md:flex-col flex-wrap gap-7 p-7 ">
+                <h1 className="text-5xl  text-black font-sans">Decor</h1>
+                <p className="text-black">Captivating designs that add beauty to every nook and corner of your home</p>
+                <img 
+                src={big1}
+                alt="big1"
+                />
             </div>
-          </div>
 
-          <div className='flex flex-row gap-5'>
-            <img src={man2} className='w-20 h-20 rounded-lg' alt='man2' />
-            <div className='flex flex-col text-left'>
-              <p className='font-semibold'>Rob Pando</p>
-              <p className='text-sm'>
-                TOP was a perfect match for my learning style. Not walking me
-                through an entire project but actually forcing me to figure it out…
-              </p>
+            <div className="flex justify-center items-center text-center ">
+                <p className="text-2xl text-black font-bold font-sans">Shop By Categories</p>
             </div>
-          </div>
+
+            {/*page4 div2/ */}
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-5 p-5">
+                {imagespart6.slice(0,6).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="neha"
+                    className="transition-transform duration-300 hover:scale-90"
+                    />
+                ))}
+            </div>
+
+            {/*page4 div3 */}
+            <div className="flex flex-wrap p-5 gap-5">
+                <img
+                src={big2}
+                alt="big2"
+                />
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center text-center gap-5 p-5">
+                <p className="text-2xl font-bold text-black">New Arrivals</p>
+            </div>
+
+            {/* pag4 div4 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 p-5 gap-5">
+                {imagespart6.slice(6,10).map((item4 => (
+                    <img 
+                    key={item4.id}
+                    src={item4.url}
+                    alt="nissi"
+                    />
+                )))}
+            </div>
+
+            <div className="flex flex-wrap gap-5 p-5">
+                <img
+                src={big3}
+                alt="big3"
+                />
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-5 p-5">
+                <p className="text-black text-2xl font-bold">Online Exclusives</p>
+            </div>
+
+
+            {/* page4 div5 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart6.slice(10,14).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="nehaa"
+                    />
+                ))}
+            </div>
+
+            <div className="flex flex-wrap gap-5 p-5">
+                <img
+                src={big4}
+                alt="big4"
+                />
+            </div>
+
+             <div className="flex flex-wrap justify-center items-center gap-5 p-5">
+                <p className="text-black text-2xl font-bold">Decor Accessories</p>
+            </div>
+
+
+
+            {/* page4 div6 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart6.slice(14,18).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="jsc"
+                    />
+                ))}
+            </div>
+
+        
+            <div className="flex flex-wrap gap-5 p-5">
+                <img
+                src={big5}
+                alt="tqy"
+                />
+            </div>
+
+
+            {/*page4 div7 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
+                {imagespart6.slice(18,21).map((item4) => (
+                        <img 
+                        key={item4.id}
+                        src={item4.url}
+                        alt="imgwe"
+                        />
+                       
+                ))}
+            </div>
+
+
+              <div className="flex flex-wrap gap-5 p-5">
+                <img
+                src={big6}
+                alt="tsdj"
+                />
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-5 p-5">
+                <p className="text-black text-2xl font-bold">Brands to Explore</p>
+            </div>
+
+
+                 {/*page4 div8 */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart6.slice(21,25).map((item4) => (
+                        <img 
+                        key={item4.id}
+                        src={item4.url}
+                        alt="imgwe"
+                        className="transition-transform duration-300 hover:scale-90"
+                        />
+                       
+                ))}
+            </div>
+
+
+
+                        {/* page2 div6 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5">
+                {imagespart6.slice(25,29).map((item4) => (
+                    <img
+                    key={item4.id}
+                    src={item4.url}
+                    alt="jsc"
+                    className="transition-transform duration-300 hover:scale-90"
+                    />
+                ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center text-center p-5 ">
+                <p className="text-black font-bold text-2xl">Bestsellers</p>
+            </div>
+
+
+            {/*page2 div7 */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-5 p-5">
+                {imagespart6.slice(29,34).map((item4) => (
+                    <div key={item4.id} >
+                        <img 
+                        src={item4.url}
+                        alt="imgwe"
+                        className="w-full object-cover transition-transform duration-300 hover:scale-90"
+                        />
+                        <p className="text-black font-bold text-xl font-sans">{item4.price}</p>
+                        <p className="font-sans text-black">{item4.name}</p>
+                    </div>
+                ))}
+            </div>
+           
+
+        
+          <div className="p-10">
+        <hr className="w-full mx-auto  rounded-full " />
+       </div>
+
+
 
         </div>
-
-        {/* Right Column */}
-        <div className='flex flex-col gap-8'>
-          
-          <div className='flex flex-row gap-5'>
-            <img src={man3} className='w-20 h-20 rounded-lg' alt='man3' />
-            <div className='flex flex-col text-left'>
-              <p className='font-semibold'>Rob Pando</p>
-              <p className='text-sm'>
-                TOP was a perfect match for my learning style. Not walking me
-                through an entire project but actually forcing me to figure it out…
-              </p>
-            </div>
-          </div>
-
-          <div className='flex flex-row gap-5'>
-            <img src={man4} className='w-20 h-20 rounded-lg' alt='man4' />
-            <div className='flex flex-col text-left'>
-              <p className='font-semibold'>Rob Pando</p>
-              <p className='text-sm'>
-                TOP was a perfect match for my learning style. Not walking me
-                through an entire project but actually forcing me to figure it out…
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <p className='flex justify-center items-center text-2xl text-black p-20 underline decoration-black mt-10'>Read more success stories</p>
-
-   {/*buttons part */}
-      <div className='flex flex-col p-18'>
-        <div className='flex flex-col justify-center items-center text-center gap-5'>
-            <h2 className='text-black font-bold text-3xl'>Support us!</h2>
-            <p>The Odin Project is funded by the community. Join us in empowering <br /> learners around the globe by supporting The Odin Project! </p>
-        </div>
-        <div className='flex flex-row justify-center items-center text-center gap-5 p-7'>
-            <button className='rounded-md bg-white border shadow-md w-32 h-10 hover:cursor-pointer transition-transform duration-300 hover:scale-110'>Learn More</button>
-            <button className='rounded-md bg-gray-600 text-white  shadow-sm w-32 h-10 hover:cursor-pointer transition-transform duration-300 hover:scale-110'>Donate Now →</button>
-        </div>
-
-      </div>
-    </div>
-  );
+    )
 }
-
-export default Page5;
+export default Page5

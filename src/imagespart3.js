@@ -1,0 +1,26 @@
+const imagespart3=[
+    {id:50, url:require("./assets/images-page-2/imgpage2 2 row.jpg")},
+    {id:51, url:require("./assets/images-page-2/imgpage2 2 row2.jpg")},
+    {id:52, url:require("./assets/images-page-2/imgpage2 2 row3.jpg")},
+    {id:53, url:require("./assets/images-page-2/imgpage2 2 row4.jpg")},
+    {id:54, url:require("./assets/images-page-2/imgpage2 2 row5.jpg")},
+    {id:55, url:require("./assets/images-page-2/imgpage2 2 row6.jpg")},
+    {id:56, url:require("./assets/images-page-2/imgpage2 3 row.jpg")},
+    {id:57, url:require("./assets/images-page-2/imgpage2 3 row2.jpg")},
+    {id:58, url:require("./assets/images-page-2/imgpage2 3 row3.jpg")},
+    {id:59, url:require("./assets/images-page-2/imgpage2 3 row4.jpg")},
+    {id:60, url:require("./assets/images-page-2/imgpage2 4 row.jpg")},
+    {id:61, url:require("./assets/images-page-2/imgpage2 4 row2.jpg")},
+    {id:62, url:require("./assets/images-page-2/imgpage2 4 row3.jpg")},
+    {id:63, url:require("./assets/images-page-2/imgpage2 4 row4.jpg")},
+    {id:64, url:require("./assets/images-page-2/page2-30.jpg")},
+    {id:65, url:require("./assets/images-page-2/page2-40.jpg")},
+    {id:66, url:require("./assets/images-page-2/page2-50.jpg")},
+    {id:67, url:require("./assets/images-page-2/page2-60.jpg")},
+    {id:68, url:require("./assets/images-page-2/imgpage2 5 row.jpg"),price:"₹2,799",name:"Helios Alton beside Table"},
+    {id:69, url:require("./assets/images-page-2/imgpage2 5 row2.jpg"),price:"₹2,799",name:"Helios Alton beside Table"},
+    {id:70, url:require("./assets/images-page-2/imgpage2 5 row3.jpg"),price:"₹7,499",name:"Senorita metal standing Mirror"},
+    {id:71, url:require("./assets/images-page-2/imgpage2 5 row4.jpg"),price:"₹14,999",name:"Tiffikin Luxury leather Bed side Table"},
+    {id:72, url:require("./assets/images-page-2/imgpage2 5 row5.jpg"),price:"₹4,999",name:"Helios Reyana NXT Beside Table"}
+]
+export default imagespart3;
