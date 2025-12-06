@@ -16,8 +16,9 @@ function Header() {
 
   return (
     <div className="grid grid-cols-5 md:grid-cols-10 gap-3 p-5 justify-around shadow-sm hover:cursor-pointer bg-gray-50 min-w-fit">
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/living-room")}
       >
         <img
@@ -25,10 +26,11 @@ function Header() {
           alt="Living Room"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Living Room</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Living Room</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/bedroom")}
       >
         <img
@@ -36,10 +38,11 @@ function Header() {
           alt="Bedroom"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Bedroom</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Bedroom</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/dining-room")}
       >
         <img
@@ -47,10 +50,11 @@ function Header() {
           alt="Dining Room"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Dining Room</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Dining Room</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/organisers")}
       >
         <img
@@ -58,10 +62,11 @@ function Header() {
           alt="Organisers"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Organisers</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Organisers</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/decor")}
       >
         <img
@@ -69,10 +74,11 @@ function Header() {
           alt="Decor"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Decor</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Decor</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/furnishings")}
       >
         <img
@@ -80,10 +86,11 @@ function Header() {
           alt="Furnishings"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Furnishings</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Furnishings</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/kitchen")}
       >
         <img
@@ -91,10 +98,11 @@ function Header() {
           alt="Kitchen"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Kitchen</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Kitchen</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/tableware")}
       >
         <img
@@ -102,10 +110,11 @@ function Header() {
           alt="Tableware"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Tableware</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Tableware</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/bath-laundry")}
       >
         <img
@@ -113,10 +122,11 @@ function Header() {
           alt="Bath & Laundry"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Bath&Laundry</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Bath & Laundry</p>
       </div>
+
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center w-full"
         onClick={() => navigate("/gifting")}
       >
         <img
@@ -124,8 +134,9 @@ function Header() {
           alt="Gifting"
           className="w-14 h-15 transition-transform duration-300 hover:scale-125"
         />
-        <p className="text-black font-semibold">Gifting</p>
+        <p className="text-black font-semibold text-center whitespace-nowrap">Gifting</p>
       </div>
+
     </div>
   );
 }
